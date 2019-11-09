@@ -1,13 +1,54 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.guthub-user-btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.guthub-user-btn a {
+    color: #fff !important;
+}
+.main-nav {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 3em;
+}
+.main-nav a {
+    color: #fff;
+}
+.main-nav p {
+    margin: 0 auto;
+}
+.avatar {
+    width: 4em;
+    border-radius: 100px;
+    display: inline-block;
+    position: relative;
+    top: -11px;
+}
+.info-container {
+    display: inline-block;
+    margin-left: 10px;
+}
+.middle {
+    display: block;
+    vertical-align: middle;
+}
+.main-container {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.back-image {
+    width: 10px;
+    margin-right: 10px;
+}
+.spinner-app {
+    margin: 0 auto;
+    display: block;
 }
