@@ -1,13 +1,16 @@
 import React from "react";
 import {
-  Spinner,
-  Navbar
+  Spinner
 } from "reactstrap";
 import request from '../helpers/request';
-import { Link } from "react-router-dom";
+import CustomNav from './CustomNav';
 
 class Person extends React.Component {
   state = {
+    loading: false,
+    name:"",
+    avatar:"",
+    location:""
   }
 
   componentDidMount() {
@@ -27,14 +30,8 @@ class Person extends React.Component {
 
   render() {
     return (
-        <div className="content">
-          <Navbar className="main-nav">
-            <Link to="/">
-              <img alt="back-button" className="back-image" src="https://icon-library.net/images/white-back-icon/white-back-icon-7.jpg"/>
-              Back
-            </Link>
-            <p>Person</p>
-          </Navbar>
+        <>
+          <CustomNav back title="Person"/>
           {
             this.state.loading ?
               <Spinner className="spinner-app"/>
@@ -49,7 +46,7 @@ class Person extends React.Component {
                 </div>
               </div>
           }
-        </div>
+        </>
     );
   }
 }
